@@ -32,6 +32,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Item
+                    key={story && story.title}
                     {...story}
                     onNext={() => {
                         this.setState(({ index }) => {
